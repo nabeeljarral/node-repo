@@ -11,14 +11,13 @@ jobs:
       - run: bats -v
 name: Greeting on variable day
 
-on:[push]
 
 env:
   DAY_OF_WEEK: Monday
 
 jobs:
   greeting_job:
-    runs-on: ubuntu-latest
+
     env:
       Greeting: Hello
     steps:
