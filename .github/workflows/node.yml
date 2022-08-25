@@ -6,11 +6,12 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    # Map a step output to a job output
     outputs:
-        ou1: ${{steps.step1.out1.test}}  
+      output1: ${{ steps.step1.outputs.test }}
     steps:
       - id: step1
-        run: echo "::set-output name=test::Hello"
+        run: echo "::set-output name=test::hello"
     
     
   
