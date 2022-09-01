@@ -26,7 +26,7 @@ jobs:
     - name: check the code  
       uses: actions/checkout@v3
     - name: install npm dependencies
-      run:  npm install
+      run:  apache2 install
   
   
    
