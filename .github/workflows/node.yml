@@ -23,8 +23,10 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
+    - name: check the code  
+      uses: actions/checkout@v3
     - name: check node version 
-    - run: node --v
+      run: node --v
   
   
    
